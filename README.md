@@ -2,42 +2,63 @@
 
 ## 📌 Project Overview
 
-This project performs Exploratory Data Analysis (EDA) on the World Happiness Report 2019 dataset. The goal is to understand the factors that influence happiness levels across different countries and identify relationships between economic, social, and health indicators with overall happiness scores.
+This project performs Exploratory Data Analysis (EDA) on the World Happiness Report 2019 dataset. The objective is to analyze happiness scores across different countries and identify the key factors that influence happiness levels worldwide.
+
+The analysis focuses on economic, social, and health-related indicators such as GDP per capita, social support, and healthy life expectancy. Various visualizations and statistical analyses are used to uncover meaningful insights.
 
 This project was completed as part of the Pluto Academy AI & ML Internship Program.
 
 ---
 
+## 🔗 Project Links
+
+### Google Colab Notebook
+https://colab.research.google.com/drive/1dF6txpqNpakMZuDDbgsvoGr1EG_L2kgk?usp=sharing
+
+### GitHub Repository
+https://github.com/pratapashanumukhi/World-Happiness-Report-2019-EDA
+
+---
+
 ## 🎯 Objectives
 
-- Analyze the structure and quality of the dataset.
+- Understand the structure of the dataset.
+- Perform data cleaning and quality checks.
 - Identify the happiest and least happy countries.
-- Explore relationships between happiness score and key factors.
-- Generate meaningful insights through visualizations.
-- Summarize findings that explain variations in happiness across countries.
+- Analyze relationships between happiness and important indicators.
+- Generate insights using visualizations and statistical analysis.
+
+---
+
+## 📚 Dataset Source
+
+**Dataset:** World Happiness Report 2019
+
+**Source:**
+https://www.kaggle.com/datasets/unsdsn/world-happiness
+
+The dataset contains happiness rankings and socio-economic indicators for 156 countries around the world.
 
 ---
 
 ## 📂 Dataset Information
 
-**Dataset:** World Happiness Report 2019
+### Dataset Shape
+- Rows: 156
+- Columns: 9
 
-**Number of Countries:** 156
-
-**Number of Features:** 9
-
-### Features Included
+### Features
 
 | Feature | Description |
-|----------|------------|
-| Overall rank | Happiness ranking of country |
+|----------|-------------|
+| Overall rank | Happiness ranking of a country |
 | Country or region | Country name |
 | Score | Happiness score |
 | GDP per capita | Economic contribution |
-| Social support | Support from family/community |
+| Social support | Social support index |
 | Healthy life expectancy | Expected healthy lifespan |
-| Freedom to make life choices | Personal freedom measure |
-| Generosity | Generosity index |
+| Freedom to make life choices | Freedom index |
+| Generosity | Generosity score |
 | Perceptions of corruption | Corruption perception score |
 
 ---
@@ -57,84 +78,108 @@ This project was completed as part of the Pluto Academy AI & ML Internship Progr
 ### Data Understanding
 - Dataset shape analysis
 - Column inspection
-- Data type analysis
-- Missing value detection
+- Missing value analysis
+- Data type inspection
 - Statistical summary generation
 
-### Top & Bottom Countries Analysis
+### Country Ranking Analysis
 - Top 10 happiest countries
 - Bottom 10 happiest countries
 
-### Correlation & Relationship Analysis
+### Relationship Analysis
 - GDP per Capita vs Happiness Score
 - Social Support vs Happiness Score
 - Healthy Life Expectancy vs Happiness Score
 
-### Data Visualization
+### Visualization
 - Scatter plots
 - Correlation analysis
-- Trend observations
+- Trend identification
 
 ---
 
 ## 🔍 Key Findings
 
-### 1. Happiest Countries
-The top countries in the happiness rankings include:
+### Top 10 Happiest Countries
 
-- Finland
-- Denmark
-- Norway
-- Iceland
-- Netherlands
+1. Finland
+2. Denmark
+3. Norway
+4. Iceland
+5. Netherlands
+6. Switzerland
+7. Sweden
+8. New Zealand
+9. Canada
+10. Austria
 
-These countries consistently score high in economic stability, social support, and quality of life.
+### Bottom 10 Happiest Countries
 
-### 2. Least Happy Countries
-Countries at the bottom of the ranking include:
-
-- South Sudan
-- Central African Republic
-- Afghanistan
-- Tanzania
-- Rwanda
-
-These countries generally face economic and social challenges.
-
-### 3. GDP and Happiness
-A strong positive relationship exists between GDP per capita and happiness score.
-
-**Correlation:** ~0.79
-
-This suggests that countries with stronger economies tend to report higher levels of happiness.
-
-### 4. Social Support and Happiness
-Countries with stronger social support systems generally achieve higher happiness scores.
-
-Social support is one of the most influential factors affecting happiness.
-
-### 5. Health and Happiness
-Healthy life expectancy shows a strong positive relationship with happiness.
-
-Countries with better healthcare and living conditions tend to be happier.
+1. South Sudan
+2. Central African Republic
+3. Afghanistan
+4. Tanzania
+5. Rwanda
+6. Yemen
+7. Malawi
+8. Syria
+9. Botswana
+10. Haiti
 
 ---
 
-## 📈 Conclusion
+## 📈 GDP per Capita vs Happiness Score
 
-The analysis indicates that happiness is strongly associated with:
+### Observation
 
-- Economic prosperity (GDP per capita)
-- Social support systems
-- Healthy life expectancy
+- Countries with higher GDP per capita generally report higher happiness scores.
+- A strong positive relationship exists between economic prosperity and happiness.
+- The correlation value is approximately **0.79**, indicating a significant positive relationship.
 
-Countries that perform well in these areas generally achieve higher happiness scores. Finland ranked as the happiest country in the World Happiness Report 2019.
+---
+
+## 🤝 Social Support vs Happiness Score
+
+### Observation
+
+- Social support has a strong positive relationship with happiness.
+- Countries with stronger support systems tend to achieve higher happiness scores.
+- People generally report greater happiness when supported by family and society.
+
+---
+
+## ❤️ Healthy Life Expectancy vs Happiness Score
+
+### Observation
+
+- Countries with higher life expectancy generally show higher happiness scores.
+- Better healthcare and living conditions contribute positively to happiness.
+- Healthy populations tend to experience better overall well-being.
+
+---
+
+## 📋 Summary
+
+1. The World Happiness Report 2019 dataset contains data from 156 countries with 9 attributes.
+2. The dataset does not contain any missing values.
+3. No duplicate records were found.
+4. Most variables are numerical, while country names are categorical.
+5. The dataset is clean and ready for exploratory data analysis.
+
+---
+
+## 📌 Final Conclusion
+
+- Finland is the happiest country in the 2019 World Happiness Report.
+- GDP per capita, social support, and healthy life expectancy strongly influence happiness levels.
+- Countries with stronger economies and better social systems generally achieve higher happiness scores.
+- Economic growth alone is not sufficient; social and health factors also play a crucial role in improving overall happiness.
 
 ---
 
 ## 📁 Repository Structure
 
-```
+```text
 World-Happiness-Report-2019-EDA/
 │
 ├── World_Happiness_Report_EDA.ipynb
@@ -144,23 +189,26 @@ World-Happiness-Report-2019-EDA/
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run This Project
 
-1. Clone this repository.
+### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/World-Happiness-Report-2019-EDA.git
+git clone https://github.com/pratapashanumukhi/World-Happiness-Report-2019-EDA.git
 ```
 
-2. Open the notebook in Google Colab or Jupyter Notebook.
-
-3. Install required libraries.
+### Install Required Libraries
 
 ```bash
 pip install pandas matplotlib
 ```
 
-4. Run all cells.
+### Run Notebook
+
+1. Open Google Colab or Jupyter Notebook.
+2. Upload the dataset.
+3. Open the notebook.
+4. Run all cells sequentially.
 
 ---
 
@@ -168,6 +216,24 @@ pip install pandas matplotlib
 
 **Shanumukhi Pratapa**
 
-AI & ML Internship Project
+B.Tech CSE (AI & ML)
 
-Pluto Academy
+VIT-AP University
+
+Pluto Academy AI & ML Internship
+
+Email: pratapashanumukhi@gmail.com
+
+GitHub: https://github.com/pratapashanumukhi
+
+---
+
+## ⭐ Internship Project
+
+This project was developed as part of the Pluto Academy AI & ML Internship Program to demonstrate practical skills in:
+
+- Data Analysis
+- Data Visualization
+- Exploratory Data Analysis (EDA)
+- Insight Generation
+- Python Programming
